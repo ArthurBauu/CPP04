@@ -1,0 +1,21 @@
+CXX = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+
+SRCS = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+OBJS = $(SRCS:.cpp=.o)
+NAME = animal_test
+
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
+
+clean:
+	rm -f *.o
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re

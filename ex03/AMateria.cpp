@@ -1,11 +1,11 @@
 #include "AMateria.hpp"
 
 AMateria::AMateria() : type("AMateria") {
-	std::cout << "AMateria default constructor called" << std::endl;
+	// std::cout << "AMateria default constructor called" << std::endl;
 }
 
 AMateria::AMateria(const std::string &type) : type(type) {
-	std::cout << "AMateria constructor called" << std::endl;
+	// std::cout << "AMateria constructor called" << std::endl;
 }
 
 AMateria::~AMateria() {

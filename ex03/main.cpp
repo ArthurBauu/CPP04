@@ -28,7 +28,7 @@ int main()
     std::cout << "\n=== Use Materias ===" << std::endl;
     ICharacter* bob = new Character("Bob");
 
-    me->use(0, *me); // ice
+    me->use(0, *bob); // ice
     me->use(1, *bob); // cure
     me->use(2, *bob); // slot vide
 

@@ -3,7 +3,7 @@
 Character::Character() : name("Default") {
 	for (int i = 0; i < MAX_MATERIA; i++)
 		inventory[i] = NULL;
-	std::cout << "Character default constructor called" << std::endl;
+	// std::cout << "Character default constructor called" << std::endl;
 }
 
 Character::~Character() {
@@ -11,7 +11,7 @@ Character::~Character() {
 		if (inventory[i])
 			delete inventory[i];
 	}
-	std::cout << "Character destructor called" << std::endl;
+	// std::cout << "Character destructor called" << std::endl;
 }
 
 Character::Character(const std::string &name) : name(name) {

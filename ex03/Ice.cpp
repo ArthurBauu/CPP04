@@ -2,11 +2,11 @@
 #include "ICharacter.hpp"
 
 Ice::Ice() : AMateria("ice") {
-	std::cout << "Ice default constructor called" << std::endl;
+	// std::cout << "Ice default constructor called" << std::endl;
 }
 
 Ice::~Ice() {
-	std::cout << "Ice materia destructor called" << std::endl;
+	// std::cout << "Ice materia destructor called" << std::endl;
 }
 
 Ice::Ice(const Ice &other) : AMateria(other) {

@@ -7,9 +7,9 @@
 class Animal {
 protected:
 	std::string type;
+	Animal();
 
 public:
-	Animal();
     virtual ~Animal();
 
 	Animal(const Animal &other);

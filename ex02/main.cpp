@@ -26,18 +26,25 @@ int main() {
 	delete j;
 	delete i;
 
-	std::cout << "\n=== Deep copy test ===" << std::endl;
+	std::cout << "\n=== Deep Copy Test ===" << std::endl;
 	Dog dog1;
-	dog1.getBrain()->setIdea(0, "Play fetch");
-	Dog dog2 = dog1;
+	dog1.getBrain()->setIdea(0, "I want to eat");
+	dog1.getBrain()->setIdea(1, "I want to sleep");
 
+	Dog dog2 = dog1; // deep copy
 	std::cout << "Dog1 idea[0]: " << dog1.getBrain()->getIdea(0) << std::endl;
+	std::cout << "Dog1 idea[1]: " << dog1.getBrain()->getIdea(1) << std::endl;
 	std::cout << "Dog2 idea[0]: " << dog2.getBrain()->getIdea(0) << std::endl;
+	std::cout << "Dog2 idea[1]: " << dog2.getBrain()->getIdea(1) << std::endl;
 
-	dog2.getBrain()->setIdea(0, "Eat food");
-	std::cout << "After change:" << std::endl;
+	std::cout << "\nModifying dog2's idea[1]..." << std::endl;
+	dog2.getBrain()->setIdea(1, "I want to play fetch");
+	
+	std::cout << "After modification:" << std::endl;
 	std::cout << "Dog1 idea[0]: " << dog1.getBrain()->getIdea(0) << std::endl;
+	std::cout << "Dog1 idea[1]: " << dog1.getBrain()->getIdea(1) << std::endl;
 	std::cout << "Dog2 idea[0]: " << dog2.getBrain()->getIdea(0) << std::endl;
+	std::cout << "Dog2 idea[1]: " << dog2.getBrain()->getIdea(1) << std::endl;
 
 	return 0;
 }

@@ -3,7 +3,7 @@
 MateriaSource::MateriaSource() {
 	for (int i = 0; i < 4; i++)
 		materias[i] = NULL;
-	std::cout << "MateriaSource default constructor called" << std::endl;
+	// std::cout << "MateriaSource default constructor called" << std::endl;
 }
 
 MateriaSource::~MateriaSource() {
@@ -11,7 +11,7 @@ MateriaSource::~MateriaSource() {
 		if (materias[i])
 			delete materias[i];
 	}
-	std::cout << "MateriaSource destructor called" << std::endl;
+	// std::cout << "MateriaSource destructor called" << std::endl;
 }
 
 MateriaSource::MateriaSource(const MateriaSource &other) {

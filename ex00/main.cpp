@@ -10,14 +10,18 @@ int main() {
 	const Animal* dog = new Dog();
 	const Animal* cat = new Cat();
 
-	std::cout << dog->getType() << " ";
+
+	std::cout << "\n=== Sound Test ===" << std::endl;
+	std::cout << "Animal type : " << dog->getType() << " " << std::endl;
 	dog->makeSound();
 
-	std::cout << cat->getType() << " ";
+	std::cout << "Animal type : "<< cat->getType() << " " << std::endl;
 	cat->makeSound();
 
+	std::cout << "Animal type : "<< meta->getType() << " " << std::endl;
 	meta->makeSound();
 
+	std::cout << "\n=== Cleanup ===" << std::endl;
 	delete meta;
 	delete dog;
 	delete cat;
